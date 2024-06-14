@@ -1,0 +1,65 @@
+/* Base styles */
+.HeroContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+
+    background-color: rgba(255, 255, 255, 0.2); 
+    position: relative;
+    background-image: url('../assets/Banner.jpg');
+  }
+
+
+  
+  .HeroText {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+  }
+  
+  .Title {
+    font-size: 2.5rem;
+    color: yellow;
+  }
+  
+  .Subtitle {
+    font-size: 1.5rem;
+    color: blue;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .Title {
+      font-size: 2rem; /* Decrease font size for smaller screens */
+    }
+    
+    .HeroText {
+      margin-top: 30px;
+     
+    }
+    .HeroText h6{
+        font-size: small;
+       
+      }
+      .HeroText h4{
+        font-size:x-large;
+       
+      }
+    
+    .HeroContainer {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      background-position: center; 
+      background-repeat: no-repeat;
+  
+      background-color: rgba(255, 255, 255, 0.2); 
+    }
+  }
+  
